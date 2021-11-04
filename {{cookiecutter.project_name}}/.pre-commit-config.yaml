@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+      - id: black
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: stable
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-docstrings]
+  - repo: https://github.com/asottile/seed-isort-config
+    rev: stable
+    hooks:
+      - id: seed-isort-config
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: stable
+    hooks:
+      - id: isort
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "v0.910-1"
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          [types-Jinja2, types-requests, openpyxl-stubs, types-python-dateutil]
+        exclude: docs/
