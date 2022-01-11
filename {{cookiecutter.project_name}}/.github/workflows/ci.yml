@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         # prettier-ignore
-        python-version: [{{cookiecutter.python_version}}]
+        python-version: ["{{cookiecutter.python_version}}"]
 {% raw %}
     steps:
       - name: Install Libraries
