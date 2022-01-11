@@ -20,6 +20,5 @@ repos:
     rev: "v0.910-1"
     hooks:
       - id: mypy
-        additional_dependencies:
-          [types-Jinja2, types-requests, openpyxl-stubs, types-python-dateutil]
+        additional_dependencies: []
         exclude: docs/
