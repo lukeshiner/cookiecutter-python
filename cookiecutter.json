@@ -2,7 +2,7 @@
     "project_name": "temp",
     "version": "0.0.1",
     "description": "",
-    "python_version": "3.11",
+    "python_version": "3.12",
     "year": "{% now 'utc', '%Y' %}",
     "_extensions": ["jinja2_time.TimeExtension"]
 }
